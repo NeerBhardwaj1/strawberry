@@ -31,7 +31,7 @@ def execute_query(root, context=None, variables=None):
                         item_result_0["id"] = field_id_value
                     except Exception as e:
                         if not any(err.get('message') == str(e) for err in errors):
-                            errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['id']})
+                            errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['id'], 'locations': [], 'extensions': {'fieldName': 'id', 'fieldType': 'String!', 'alias': 'id'}})
                         raise  # Propagate non-nullable error
                     try:
                         info.field_name = "title"
@@ -39,7 +39,7 @@ def execute_query(root, context=None, variables=None):
                         item_result_0["title"] = field_title_value
                     except Exception as e:
                         if not any(err.get('message') == str(e) for err in errors):
-                            errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['title']})
+                            errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['title'], 'locations': [], 'extensions': {'fieldName': 'title', 'fieldType': 'String!', 'alias': 'title'}})
                         raise  # Propagate non-nullable error
                     try:
                         info.field_name = "author"
@@ -52,7 +52,7 @@ def execute_query(root, context=None, variables=None):
                                 nested_result_1["id"] = field_id_value
                             except Exception as e:
                                 if not any(err.get('message') == str(e) for err in errors):
-                                    errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['author'] + ['id']})
+                                    errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['author'] + ['id'], 'locations': [], 'extensions': {'fieldName': 'id', 'fieldType': 'String!', 'alias': 'id'}})
                                 raise  # Propagate non-nullable error
                             try:
                                 info.field_name = "name"
@@ -60,7 +60,7 @@ def execute_query(root, context=None, variables=None):
                                 nested_result_1["name"] = field_name_value
                             except Exception as e:
                                 if not any(err.get('message') == str(e) for err in errors):
-                                    errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['author'] + ['name']})
+                                    errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['author'] + ['name'], 'locations': [], 'extensions': {'fieldName': 'name', 'fieldType': 'String!', 'alias': 'name'}})
                                 raise  # Propagate non-nullable error
                             try:
                                 info.field_name = "email"
@@ -68,21 +68,21 @@ def execute_query(root, context=None, variables=None):
                                 nested_result_1["email"] = field_email_value
                             except Exception as e:
                                 if not any(err.get('message') == str(e) for err in errors):
-                                    errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['author'] + ['email']})
+                                    errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['author'] + ['email'], 'locations': [], 'extensions': {'fieldName': 'email', 'fieldType': 'String!', 'alias': 'email'}})
                                 raise  # Propagate non-nullable error
                             item_result_0["author"] = nested_result_1
                         else:
                             item_result_0["author"] = None
                     except Exception as e:
                         if not any(err.get('message') == str(e) for err in errors):
-                            errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['author']})
+                            errors.append({'message': str(e), 'path': [] + ['posts'] + [idx] + ['author'], 'locations': [], 'extensions': {'fieldName': 'author', 'fieldType': 'Author!', 'alias': 'author'}})
                         raise  # Propagate non-nullable error
                     result["posts"].append(item_result_0)
             else:
                 result["posts"] = None
         except Exception as e:
             if not any(err.get('message') == str(e) for err in errors):
-                errors.append({'message': str(e), 'path': [] + ['posts']})
+                errors.append({'message': str(e), 'path': [] + ['posts'], 'locations': [], 'extensions': {'fieldName': 'posts', 'fieldType': '[Post!]!', 'alias': 'posts'}})
             raise  # Propagate non-nullable error
     except Exception as root_error:
         result = None
