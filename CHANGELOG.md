@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+0.311.2 - 2026-03-16
+--------------------
+
+Fix `TypeError: unhashable type: 'EnumAnnotation'` when using `Annotated` enums as resolver parameter types (e.g., `Annotated[Color, strawberry.enum()]`).
+
+Contributed by [Thiago Bellini Ribeiro](https://github.com/bellini666) via [PR #4305](https://github.com/strawberry-graphql/strawberry/pull/4305/)
+
+
 0.311.1 - 2026-03-10
 --------------------
 
