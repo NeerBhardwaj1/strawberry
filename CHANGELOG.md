@@ -1,6 +1,16 @@
 CHANGELOG
 =========
 
+0.311.3 - 2026-03-16
+--------------------
+
+Fix `UnallowedReturnTypeForUnion` when using a generic type with a union
+TypeVar (e.g. `Collection[A | B]`) inside an outer union
+(`Collection[A | B] | Error`).
+
+Contributed by [Thiago Bellini Ribeiro](https://github.com/bellini666) via [PR #4302](https://github.com/strawberry-graphql/strawberry/pull/4302/)
+
+
 0.311.2 - 2026-03-16
 --------------------
 
