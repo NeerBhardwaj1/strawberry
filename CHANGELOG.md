@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+0.312.0 - 2026-03-21
+--------------------
+
+`strawberry.asdict` now recursively unwraps `Some()` container values and removes keys with the `UNSET` value.
+
+Contributed by [Galen Rice](https://github.com/GriceTurrble) via [PR #4320](https://github.com/strawberry-graphql/strawberry/pull/4320/)
+
+
 0.311.3 - 2026-03-16
 --------------------
 
