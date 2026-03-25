@@ -1,6 +1,18 @@
 CHANGELOG
 =========
 
+0.312.1 - 2026-03-25
+--------------------
+
+Fix `Annotated` metadata being lost on optional union types
+
+When using `Annotated[A | B | None, strawberry.union("MyUnion")]`,
+the custom union name and other metadata would be dropped during `None` stripping, causing the schema to fall back to an auto-generated name
+(e.g. "AB" instead of "MyUnion").
+
+Contributed by [GabrielTDS-dev](https://github.com/GabrielTDS-dev) via [PR #4321](https://github.com/strawberry-graphql/strawberry/pull/4321/)
+
+
 0.312.0 - 2026-03-21
 --------------------
 
