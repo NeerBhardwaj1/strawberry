@@ -1,6 +1,16 @@
 CHANGELOG
 =========
 
+0.312.2 - 2026-03-25
+--------------------
+
+Fix compatibility with Starlette 1.0.0 in the dev server by replacing
+removed `add_route`/`add_websocket_route` methods with `Route`/`WebSocketRoute`
+objects passed to the `Starlette` constructor.
+
+Contributed by [Thiago Bellini Ribeiro](https://github.com/bellini666) via [PR #4328](https://github.com/strawberry-graphql/strawberry/pull/4328/)
+
+
 0.312.1 - 2026-03-25
 --------------------
 
