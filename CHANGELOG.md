@@ -1,6 +1,16 @@
 CHANGELOG
 =========
 
+0.312.4 - 2026-04-05
+--------------------
+
+Fix a memory leak in the `graphql-transport-ws` WebSocket handler where completed
+task objects would accumulate in a list between messages. Task cleanup now uses
+`asyncio.Task.add_done_callback` for immediate cleanup instead of deferred reaping.
+
+Contributed by [Thiago Bellini Ribeiro](https://github.com/bellini666) via [PR #4345](https://github.com/strawberry-graphql/strawberry/pull/4345/)
+
+
 0.312.3 - 2026-04-04
 --------------------
 
