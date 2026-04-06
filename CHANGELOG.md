@@ -1,6 +1,18 @@
 CHANGELOG
 =========
 
+0.313.0 - 2026-04-06
+--------------------
+
+Add PydanticErrorExtension to format validation errors into structured GraphQL error extensions.
+
+Includes:
+- Structured validation_errors output
+- Support for Pydantic v1 and v2
+
+Contributed by [Peehu Kandwal](https://github.com/peehu-k) via [PR #4342](https://github.com/strawberry-graphql/strawberry/pull/4342/)
+
+
 0.312.4 - 2026-04-05
 --------------------
 
