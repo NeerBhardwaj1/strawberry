@@ -33,3 +33,4 @@ jobs:
           autopub-version: "1.0.0a58"
           github-token: ${{ secrets.BOT_TOKEN }}
           fail-on-missing: "true"
+          extra-plugins: strawberry-autopub-plugins
