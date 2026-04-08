@@ -1,6 +1,26 @@
 CHANGELOG
 =========
 
+0.314.2 - 2026-04-08
+--------------------
+
+This release fixes a bug in `_listen_to_channel_generator` where `yield await
+awaitable` inside `try/except asyncio.TimeoutError` caused the `yield` to fall
+within the `try` block's bytecode exception table range.
+
+This meant that a `TimeoutError` thrown into the generator at the `yield` point
+(i.e. when the generator is suspended after delivering a value) was incorrectly
+caught by the internal timeout handler, silently stopping the generator instead
+of propagating to the caller. In production, this could manifest as
+`RuntimeError: cannot reuse already awaited coroutine` during WebSocket
+disconnect cleanup.
+
+The fix splits `yield await awaitable` into `result = await awaitable` followed
+by `yield result`, so the `yield` is outside the `try` block and exceptions
+thrown at the yield point propagate correctly.
+
+This release was contributed by [@ben-xo](https://github.com/ben-xo) in [#4352](https://github.com/strawberry-graphql/strawberry/pull/4352)
+
 0.314.1 - 2026-04-08
 --------------------
 
