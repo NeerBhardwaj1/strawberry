@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+0.314.3 - 2026-04-08
+--------------------
+
+Fix `deprecation_reason` not being copied from arguments to auto-generated input type fields in `InputMutationExtension`.
+
+This release was contributed by [@youngjaekwon](https://github.com/youngjaekwon) in [#4353](https://github.com/strawberry-graphql/strawberry/pull/4353)
+
 0.314.2 - 2026-04-08
 --------------------
 
