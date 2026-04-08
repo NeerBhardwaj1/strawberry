@@ -1,6 +1,17 @@
 CHANGELOG
 =========
 
+0.314.1 - 2026-04-08
+--------------------
+
+This release attaches error details to Apollo Federation inline tracing (FTV1) trace nodes. This was missing in the original FTV1 addition made in [0.314.0](https://github.com/strawberry-graphql/strawberry/releases/tag/0.314.0).
+
+When a resolver raises an exception, the error message, location, and path are now included in the corresponding trace node, allowing Apollo Studio to display error information alongside timing data.
+
+This release was contributed by [@FineAndDanD](https://github.com/FineAndDanD) in [#4351](https://github.com/strawberry-graphql/strawberry/pull/4351)
+
+Additional contributors: [@bellini666](https://github.com/bellini666)
+
 0.314.0 - 2026-04-07
 --------------------
 
