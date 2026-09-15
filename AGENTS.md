@@ -3,7 +3,7 @@
 Strawberry GraphQL
 
 - Docs: https://strawberry.rocks/docs
-- Repo: https://github.com/strawberry-graphql/strawberry
+- Repo: https://github.com/NeerBhardwaj1/strawberry
 
 ## Setup
 

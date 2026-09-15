@@ -97,7 +97,7 @@ where you can create a new one and provide the following information:
 ### Contributing to code
 
 > This section is about contributing to
-[Strawberry Python library](https://github.com/strawberry-graphql/strawberry).
+[Strawberry Python library](https://github.com/NeerBhardwaj1/strawberry).
 
 #### Local development
 
@@ -110,7 +110,7 @@ You will first need to clone the repository using `git` and place yourself in
 its directory:
 
 ```shell
-$ git clone git@github.com:strawberry-graphql/strawberry.git
+$ git clone git@github.com:NeerBhardwaj1/strawberry.git
 $ cd strawberry
 ```
 

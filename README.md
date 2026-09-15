@@ -1,4 +1,4 @@
-<img src="https://github.com/strawberry-graphql/strawberry/raw/main/.github/logo.png" width="124" height="150">
+<img src="https://github.com/NeerBhardwaj1/strawberry/raw/main/.github/logo.png" width="124" height="150">
 
 # Strawberry GraphQL
 
@@ -104,7 +104,7 @@ We use [uv](https://docs.astral.sh/uv) to manage dependencies, to
 get started follow these steps:
 
 ```shell
-git clone https://github.com/strawberry-graphql/strawberry
+git clone https://github.com/NeerBhardwaj1/strawberry
 cd strawberry
 uv sync
 uv run pytest
@@ -126,8 +126,8 @@ pre-commit install
 ## Links
 
 - Project homepage: https://strawberry.rocks
-- Repository: https://github.com/strawberry-graphql/strawberry
-- Issue tracker: https://github.com/strawberry-graphql/strawberry/issues
+- Repository: https://github.com/NeerBhardwaj1/strawberry
+- Issue tracker: https://github.com/NeerBhardwaj1/strawberry/issues
   - In case of sensitive bugs like security vulnerabilities, please contact
     patrick.arminio@gmail.com directly instead of using the issue tracker. We
     value your effort to improve the security and privacy of this project!
@@ -137,4 +137,4 @@ pre-commit install
 The code in this project is licensed under MIT license. See [LICENSE](./LICENSE)
 for more information.
 
-![Recent Activity](https://images.repography.com/0/strawberry-graphql/strawberry/recent-activity/d751713988987e9331980363e24189ce.svg)
+![Recent Activity](https://images.repography.com/0/NeerBhardwaj1/strawberry/recent-activity/d751713988987e9331980363e24189ce.svg)

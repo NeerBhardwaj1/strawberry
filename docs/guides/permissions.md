@@ -111,7 +111,7 @@ responsibility. You should provide your own helpers to figure out if a request
 has the permissions you expect.
 
 _For more discussion on Authentication see_
-_[Issue #830](https://github.com/strawberry-graphql/strawberry/issues/830)._
+_[Issue #830](https://github.com/NeerBhardwaj1/strawberry/issues/830)._
 
 ## Custom Error Extensions & classes
 

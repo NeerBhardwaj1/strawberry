@@ -345,7 +345,7 @@ type `ExecutionContext`.
 
 This object can be used to gain access to additional GraphQL context, or the
 request context. Take a look at the
-[`ExecutionContext` type](https://github.com/strawberry-graphql/strawberry/blob/main/strawberry/types/execution.py)
+[`ExecutionContext` type](https://github.com/NeerBhardwaj1/strawberry/blob/main/strawberry/types/execution.py)
 for available data.
 
 ```python

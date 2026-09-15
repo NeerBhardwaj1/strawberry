@@ -5,7 +5,7 @@ title: Django
 # Django
 
 Strawberry comes with a basic
-[Django integration](https://github.com/strawberry-graphql/strawberry-graphql-django).
+[Django integration](https://github.com/NeerBhardwaj1/strawberry-graphql-django).
 It provides a view that you can use to serve your GraphQL schema:
 
 ```python
@@ -22,7 +22,7 @@ urlpatterns = [
 ```
 
 Strawberry only provides a GraphQL view for Django,
-[Strawberry GraphQL Django](https://github.com/strawberry-graphql/strawberry-graphql-django)
+[Strawberry GraphQL Django](https://github.com/NeerBhardwaj1/strawberry-graphql-django)
 provides integration with the models. `import strawberry_django` should do the
 same as `import strawberry.django` if both libraries are installed.
 

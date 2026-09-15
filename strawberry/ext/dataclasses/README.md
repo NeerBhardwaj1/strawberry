@@ -6,7 +6,7 @@ projects and got further adaptations by the maintainers of Strawberry.
 ## `dataclasses.py`
 
 The file
-[dataclasses.py](https://github.com/strawberry-graphql/strawberry/tree/main/strawberry/ext/dataclasses/dataclasses.py)
+[dataclasses.py](https://github.com/NeerBhardwaj1/strawberry/tree/main/strawberry/ext/dataclasses/dataclasses.py)
 which is based on
 https://github.com/python/cpython/blob/v3.9.6/Lib/dataclasses.py#L489-L536
 but has got some small adjustments in the adopted function

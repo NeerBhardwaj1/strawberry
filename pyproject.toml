@@ -24,7 +24,7 @@ dependencies = [
 
 [project.urls]
 homepage = "https://strawberry.rocks/"
-repository = "https://github.com/strawberry-graphql/strawberry"
+repository = "https://github.com/NeerBhardwaj1/strawberry"
 documentation = "https://strawberry.rocks/"
 "Changelog" = "https://strawberry.rocks/changelog"
 "Discord" = "https://discord.com/invite/3uQ2PaY"
