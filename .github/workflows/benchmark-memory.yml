@@ -35,7 +35,7 @@ jobs:
       - name: Record benchmark environment
         run: uv run python -m tests.benchmarks.metadata benchmark-artifacts/environment.json --instrument memory
       - name: Measure allocations
-        uses: CodSpeedHQ/action@373d6868929f444bc08d901fd0eb0ad52a8875ea # v5.2.1
+        uses: CodSpeedHQ/action@f842b9a3ffe213dbb81768fd7f7eeb4dfcf1c369 # v5.4.2
         with:
           mode: memory
           run: >-
